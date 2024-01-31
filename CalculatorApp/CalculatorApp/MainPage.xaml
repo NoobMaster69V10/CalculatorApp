@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.MainPage">
+
+
+    <StackLayout BackgroundColor="#303030">
+        <StackLayout>
+            <Frame BackgroundColor="#000">
+                <Label x:Name="result" HeightRequest="100" Text="0" TextColor="#fff" FontSize="40" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+            </Frame>
+        </StackLayout>
+
+
+        <StackLayout HorizontalOptions="Center" Margin="5, 70">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Button x:Name="clear" BackgroundColor="#202020" Clicked="clear_Clicked" Grid.Column="0" Grid.Row="0" Text="C" TextColor="Red" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="btn_7" BackgroundColor="#202020" Clicked="btn7_Clicked" Grid.Column="0" Grid.Row="1" Text="7" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="btn_4" BackgroundColor="#202020" Clicked="btn4_Clicked" Grid.Column="0" Grid.Row="2" Text="4" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="btn_1" BackgroundColor="#202020" Clicked="btn1_Clicked" Grid.Column="0" Grid.Row="3" Text="1" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="delete" BackgroundColor="#202020" Clicked="delete_Clicked" Grid.Column="0" Grid.Row="4" Text="←" TextColor="#fff" FontSize="28" FontAttributes="Bold" CornerRadius="30"/>
+                
+                <BoxView Grid.Column="1" Grid.Row="0" CornerRadius="30" BackgroundColor="#202020"/>
+                <Button x:Name="btn_8" BackgroundColor="#202020" Clicked="btn8_Clicked" Grid.Column="1" Grid.Row="1" Text="8" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="btn_5" BackgroundColor="#202020" Clicked="btn5_Clicked" Grid.Column="1" Grid.Row="2" Text="5" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="btn_2" BackgroundColor="#202020" Clicked="btn2_Clicked" Grid.Column="1" Grid.Row="3" Text="2" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="btn_0" BackgroundColor="#202020" Clicked="btn0_Clicked" Grid.Column="1" Grid.Row="4" Text="0" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+
+                <BoxView Grid.Column="2" Grid.Row="0" CornerRadius="30" BackgroundColor="#202020"/>
+                <Button x:Name="btn_9" BackgroundColor="#202020" Clicked="btn9_Clicked" Grid.Column="2" Grid.Row="1" Text="9" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="btn_6" BackgroundColor="#202020" Clicked="btn6_Clicked" Grid.Column="2" Grid.Row="2" Text="6" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="btn_3" BackgroundColor="#202020" Clicked="btn3_Clicked" Grid.Column="2" Grid.Row="3" Text="3" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="dot" BackgroundColor="#202020" Clicked="dot_Clicked" Grid.Column="2" Grid.Row="4" Text="." TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+
+                <Button x:Name="divide" BackgroundColor="#202020" Clicked="divide_Clicked" Grid.Column="3" Grid.Row="0" Text="/" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="multi" BackgroundColor="#202020" Clicked="multi_Clicked" Grid.Column="3" Grid.Row="1" Text="*" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="minus" BackgroundColor="#202020" Clicked="minus_Clicked" Grid.Column="3" Grid.Row="2" Text="-" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="plus" BackgroundColor="#202020" Clicked="plus_Clicked" Grid.Column="3" Grid.Row="3" Text="+" TextColor="#fff" FontSize="20" FontAttributes="Bold" CornerRadius="30"/>
+                <Button x:Name="equal" BackgroundColor="#b0b0b0" Clicked="equal_Clicked" Grid.Column="3" Grid.Row="4" Text="=" TextColor="#fff" FontSize="28" FontAttributes="Bold" CornerRadius="30"/>
+
+            </Grid>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
